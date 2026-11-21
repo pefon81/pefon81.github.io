@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第五章 中级语法*与数字｜统合教程</title>
+<meta name="description" content="统合教程第五章：第十六课 数字、次序与时间，第十七课 简单修饰顺序（融合法、分离法、ou）；第十八至二十课尚未编完。">
+<meta name="theme-color" content="#c85f17">
+<link rel="stylesheet" href="assets/font-fefenpefon.css">
+<link rel="stylesheet" href="assets/base.css">
+</head>
+<body>
+
+<header class="bar">
+  <button class="menu-btn" id="navOpen" aria-label="打开目录" aria-expanded="false" aria-controls="nav">
+    <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+  </button>
+  <a class="brand" href="index.html">
+    <span class="brand-mark" aria-hidden="true">pe fon</span>
+    <span class="brand-name">配分语</span>
+  </a>
+  <nav class="bar-nav" aria-label="主站">
+    <a href="index.html">首页</a>
+    <a href="tutorial.html" class="is-here">统合教程</a>
+    <a href="words.html">词语表</a>
+    <a href="trainer.html">读词训练器</a>
+  </nav>
+  <div class="bar-tools">
+    <button class="icon-btn" id="toggleSide" type="button" aria-label="收起目录" aria-pressed="false" title="收起目录" data-hide="收起目录" data-show="展开目录">
+      <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><rect x="2.6" y="3.6" width="14.8" height="12.8" rx="2.2"/><path d="M7.6 3.6v12.8"/></svg>
+    </button>
+    <button class="icon-btn" id="toggleRail" type="button" aria-label="收起大纲" aria-pressed="false" title="收起大纲" data-hide="收起大纲" data-show="展开大纲">
+      <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><rect x="2.6" y="3.6" width="14.8" height="12.8" rx="2.2"/><path d="M12.4 3.6v12.8"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="scrim" id="scrim" hidden></div>
+
+<div class="layout layout--doc">
+
+  <aside class="side" id="nav" aria-label="目录">
+    <div class="side-head"><span>目录</span><button class="close-btn" id="navClose" aria-label="关闭目录">✕</button></div>
+    <div class="tree">
+      <a class="lv1" href="index.html">配分语</a>
+      <a class="lv2" href="tutorial.html">统合教程</a>
+      <span class="lv3">统合教程第一册</span>
+
+      <details>
+        <summary><span class="no">第零章</span>示例与前言</summary>
+        <ul>
+          <li><a href="ch00.html#sample">示例展示</a></li>
+          <li><a href="ch00.html#foreword">前言</a></li>
+          <li><a href="ch00.html#thanks">鸣谢名单</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary><span class="no">第一章</span>配分语综述</summary>
+        <ul>
+          <li><a href="ch01.html#letters">字母与读音</a></li>
+          <li><a href="ch01.html#syllable">音节与合法</a></li>
+          <li><a href="ch01.html#drill">练习</a></li>
+          <li><a href="ch01.html#writing">书写方式</a></li>
+          <li><a href="ch01.html#vocab">词汇</a></li>
+          <li><a href="ch01.html#habits">其他习惯</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary><span class="no">第二章</span>我是中国人</summary>
+        <ul>
+          <li><a href="ch02.html#lesson-01"><span class="no">01</span>你我他</a></li>
+          <li><a href="ch02.html#lesson-02"><span class="no">02</span>这是</a></li>
+          <li><a href="ch02.html#lesson-03"><span class="no">03</span>朋友!</a></li>
+          <li><a href="ch02.html#lesson-04"><span class="no">04</span>大象终于意识到了自己的大</a></li>
+          <li><a href="ch02.html#lesson-05"><span class="no">05</span>KONITIWA,中国!</a></li>
+          <li><a href="ch02.html#extra">拓展阅读</a></li>
+          <li><a href="ch02.html#exercise">章末练习</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary><span class="no">第三章</span>您好,我能不能吃这个?</summary>
+        <ul>
+          <li><a href="ch03.html#lesson-06"><span class="no">06</span>否定</a></li>
+          <li><a href="ch03.html#lesson-07"><span class="no">07</span>情态标记</a></li>
+          <li><a href="ch03.html#lesson-08"><span class="no">08</span>祈使句与省略</a></li>
+          <li><a href="ch03.html#lesson-09"><span class="no">09</span>更多人称与一般疑问句</a></li>
+          <li><a href="ch03.html#lesson-10"><span class="no">10</span>E,中国!</a></li>
+          <li><a href="ch03.html#poem">拓展：配分语诗歌</a></li>
+          <li><a href="ch03.html#exercise">单元练习</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary><span class="no">第四章</span>我把你放心上</summary>
+        <ul>
+          <li><a href="ch04.html#lesson-11"><span class="no">11</span>介与词</a></li>
+          <li><a href="ch04.html#lesson-12"><span class="no">12</span>特别词:yon,li,u</a></li>
+          <li><a href="ch04.html#lesson-13"><span class="no">13</span>使动思维</a></li>
+          <li><a href="ch04.html#lesson-14"><span class="no">14</span>连动与把被句</a></li>
+          <li><a href="ch04.html#lesson-15"><span class="no">15</span>这样的话,我说……</a></li>
+          <li><a href="ch04.html#lyric">拓展：配分语歌词</a></li>
+          <li><a href="ch04.html#exercise">章末练习</a></li>
+        </ul>
+      </details>
+
+      <details open>
+        <summary><span class="no">第五章</span>中级语法*与数字</summary>
+        <ul>
+          <li><a href="ch05.html#lesson-16" class="is-here"><span class="no">16</span>数字,次序与时间</a></li>
+          <li><a href="ch05.html#lesson-17"><span class="no">17</span>简单修饰顺序</a></li>
+          <li><a href="ch05.html#pending">第十八课至第二十课</a></li>
+        </ul>
+      </details>
+
+      <a class="lv2" href="words.html">词语表</a>
+      <a class="lv2" href="trainer.html">读词训练器</a>
+    </div>
+  </aside>
+
+  <main class="doc">
+
+    <nav class="crumb" aria-label="面包屑">
+      <a href="index.html">配分语</a><span class="sep">/</span>
+      <a href="tutorial.html">统合教程</a><span class="sep">/</span>
+      <span>第一册</span>
+    </nav>
+
+    <h1>第五章　中级语法*与数字</h1>
+    <p class="doc-meta">统合教程第一册　第五章　编写中</p>
+
+    <p>本章所讲语法和知识点并非全部都是必须学习的，由于教程的安排将较高级的语法知识于这里一概叙述了。难的语法点可以在需要的时候再看，也都会在课题处打上星号（*）标出的。</p>
+
+    <!-- ============ 第十六课 ============ -->
+    <h2 id="lesson-16"><span class="no">第十六课</span>数字,次序与时间</h2>
+
+    <p>配分语的数字体系有三部分。</p>
+
+    <h3>简单数字法</h3>
+
+    <div class="card think">
+      <p class="t">思考</p>
+      <p>简单数字法没有使用了，它也反应了一种已衰退的<i>前配分语</i>的思维方式：<b>阉割</b>，这也是配分失败的道本化表现之一。</p>
+      <p>这个部分说：数字——没必要。写作阿拉伯数字，至于读嘛……如果是面对面交流的，那么就用手指，不是的话就没办法了。</p>
+    </div>
+
+    <h3>通用数字法</h3>
+
+    <p>通用数字法是目前最官方最多使用的读数方法，对照表如下（其中「-」作负号）：</p>
+
+    <div class="scrollx">
+      <table>
+        <thead><tr><th>数字</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>0</th><th>.</th><th>-</th></tr></thead>
+        <tbody>
+          <tr><td>读法</td><td><span class="lat">wa</span></td><td><span class="lat">we</span></td><td><span class="lat">su</span></td><td><span class="lat">yo</span></td><td><span class="lat">so</span></td><td><span class="lat">ha</span></td><td><span class="lat">ka</span></td><td><span class="lat">ti</span></td><td><span class="lat">he</span></td><td><span class="lat">ne</span></td><td><span class="lat">fe</span></td><td><span class="lat">in</span></td></tr>
+          <tr><td>象形</td><td><span class="p">wa</span></td><td><span class="p">we</span></td><td><span class="p">su</span></td><td><span class="p">yo</span></td><td><span class="p">so</span></td><td><span class="p">ha</span></td><td><span class="p">ka</span></td><td><span class="p">ti</span></td><td><span class="p">he</span></td><td><span class="p">ne</span></td><td><span class="p">fe</span></td><td><span class="p">in</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="wl">
+      <div class="row"><span class="pic">in</span><span class="lat">in</span><span class="def">反抗，反弹，翻／例外／反而</span></div>
+    </div>
+
+    <div class="card tip">
+      <p class="t">提示</p>
+      <p>配分语仍然写作阿拉伯数字，通用数字法只是读法，不同读法下的写法或语法一致。</p>
+      <p>它的<b>取码标准</b>是“本源＋形近”。wa、we、so、ne、fe、in 是取本意或本意衍生；其他取的是阿拉伯数字的形近字形。</p>
+    </div>
+
+    <p>数字的“词缀”是 <b>un…hu</b>。</p>
+
+    <div class="wl">
+      <div class="row"><span class="pic">hu</span><span class="lat">hu</span><span class="def">测量、估计／数字、数据／数字、数学的／数</span></div>
+    </div>
+
+    <div class="ex"><div class="pefon">mi yon e pon mun un 7 hu.</div></div>
+
+    <div class="wl">
+      <div class="row"><span class="pic">mun</span><span class="lat">mun</span><span class="def">学习、教育／子女／下一代的</span></div>
+    </div>
+
+    <p>⇒ 我有 7 个果子。</p>
+
+    <p>序数则是 <b>un…lahu</b>（正着数）或 <b>un…lehu</b>（倒数）。</p>
+
+    <div class="wl">
+      <div class="row"><span class="pic">le</span><span class="lat">le</span><span class="def">结束、倒数、悔／历史／过去了的</span></div>
+    </div>
+
+    <div class="card ext">
+      <p class="t">拓展</p>
+      <p>若无歧义，序数表达中的 hu 可省略。</p>
+    </div>
+
+    <div class="ex"><div class="pefon">mi yon e pon mun un 7 le hu.</div><div class="zh">⇒ 我有倒数第 7 个果子。</div></div>
+
+    <p><b>大数*</b></p>
+    <p>对于大数字，则用 li 表示 $times 10^x$。如 730000000 = $7.3 times 10^8$ = <span class="lat">kafesuliti</span>。</p>
+
+    <div class="card tip">
+      <p class="t">提示</p>
+      <p>更多的是直接按整数取数量级，如 730000000 = $73 times 10^9$ = <span class="lat">kasulihe</span>。不需要数学中的“科学计数法”的限制。</p>
+    </div>
+
+    <p><b>语调与运用</b></p>
+    <p>配分语在描述概念时也会使用数字，如可以通过<b>腿的条数</b>来描述动物。</p>
+
+    <div class="wl">
+      <div class="row"><span class="pic">8fin</span><span class="lat">8fin</span><span class="def">一般指蜘蛛（8 条腿）</span></div>
+    </div>
+
+    <p>那数字的读法就很重要了，一般要求<b>故意与平常语调相反的重音</b>等来区分。</p>
+
+    <div class="card ext">
+      <p class="t">拓展</p>
+      <p>关于数学计算则会在后面的课程中学习，先掌握最基本的数字读法。</p>
+    </div>
+
+    <h3>道本数字法*</h3>
+
+    <p>道本数字法类似<b>道本语</b>对于数字的处理方式，使用这种读数法可能会导致写法的改变。拥有以下基本的数字词：</p>
+
+    <div class="scrollx">
+      <table>
+        <thead><tr><th>数字</th><th>0</th><th>1</th><th>2</th><th>5</th><th>20</th><th>100</th></tr></thead>
+        <tbody>
+          <tr><td>读法</td><td><span class="lat">ne</span></td><td><span class="lat">wa</span></td><td><span class="lat">we</span></td><td><span class="lat">so</span></td><td><span class="lat">sa</span></td><td><span class="lat">na</span></td></tr>
+          <tr><td>象形</td><td><span class="p">ne</span></td><td><span class="p">wa</span></td><td><span class="p">we</span></td><td><span class="p">so</span></td><td><span class="p">sa</span></td><td><span class="p">na</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>所有可表达数字的表达依赖于这些词。规则如下：</p>
+    <ol>
+      <li>对于前后俩词 A B 有 A ≥ B，那么称其为 A＋B。如 <span class="lat">so we</span> = 5＋2 = 7。</li>
+      <li>对于 A &lt; B，称其为 A×B。如 <span class="lat">we so</span> = 2×5 = 10。</li>
+      <li>一个数字可能有多种表示方式。</li>
+      <li>对于有多个词的数字，如 P T K F，先看 P T，计算完后作为一个整体数值继续看。如 <span class="lat">we so sa wa</span> = [<span class="lat">we so</span>] <span class="lat">sa wa</span> = [10 <span class="lat">sa</span>] <span class="lat">wa</span> = [[200]] <span class="lat">wa</span> = 201。</li>
+    </ol>
+
+    <div class="card think">
+      <p class="t">思考</p>
+      <p>这有点涉猎到下一课关于<b>修饰顺序</b>的内容了，先猜猜？</p>
+    </div>
+
+    <!-- ============ 第十七课 ============ -->
+    <h2 id="lesson-17"><span class="no">第十七课</span>简单修饰顺序</h2>
+
+    <p>当有多个词修饰一个后词，那么究竟是怎么看的？</p>
+
+    <h3>融合法</h3>
+
+    <p>我们按<b>融合</b>的思想看看：对于有多个词的词组（一般是名词，这里按名词举例），我们先看最开始的俩，把它们<b>融</b>到一个概念后再和下一个<b>合</b>起来。</p>
+
+    <p>如 <span class="p">ko non kan fi</span>：</p>
+
+    <div class="scrollx">
+      <table>
+        <thead><tr><th>步骤与写法</th><th>这一坨的意思</th></tr></thead>
+        <tbody>
+          <tr><td>①　<span class="p">ko</span> 水　<span class="p">non</span> 颜色　<span class="p">kan</span> 线　<span class="p">fi</span> 人</td><td>先看 ko non</td></tr>
+          <tr><td>②　［<span class="p">ko non</span>］<span class="p">kan</span>　<span class="p">fi</span></td><td>蓝色</td></tr>
+          <tr><td>③　［［<span class="p">ko non</span>］<span class="p">kan</span>］　<span class="p">fi</span></td><td>蓝色的线</td></tr>
+          <tr><td>④　［［［<span class="p">ko non</span>］<span class="p">kan</span>］<span class="p">fi</span>］</td><td>蓝发人</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>看出来了吧：每次只把<b>相邻的两个</b>揉到一起，揉成的一坨再整个去和下一个揉。所以 <i>P T K F = [(P T) K] F</i>，这就是配分语的<b>常规修饰顺序</b>。</p>
+
+    <div class="card think">
+      <p class="t">思考</p>
+      <p>想一想：为什么可以在此处将 kan 翻译成“头发”？</p>
+    </div>
+
+    <div class="wl">
+      <div class="row"><span class="pic">nu</span><span class="lat">nu</span><span class="def">交易／钱、黄金／富有、有价的</span></div>
+    </div>
+
+    <p>所以就有金发人 <span class="p">nu non fi</span> 之类的词汇了。</p>
+
+    <h3>分离法</h3>
+
+    <p>你也可以这样理解：修饰顺序本质上是<b>分割顺序</b>。在词组 PTKF 中先分割 F，再割去 K，以此类推。这个方法可以用来解释在多个词的词组里，最前面的词 PT 的含义粘合是最紧密的。</p>
+
+    <p><span class="p">wi ku to</span> ⇒ 鹅卵石路</p>
+    <p>可以这样理解：拆成 <span class="p">wi ku</span>|<span class="p">to</span>，其中：</p>
+
+    <div class="wl">
+      <div class="row"><span class="pic">wi</span><span class="lat">wi</span><span class="def">进入、吸、汲取／中等、平庸／被夹、中间的</span></div>
+      <div class="row"><span class="pic">ku</span><span class="lat">ku</span><span class="def">结晶、凝聚／块、固体／硬的</span></div>
+    </div>
+
+    <p><span class="p">wi ku</span> 就是“中等<i>大小</i>的坚硬粒状物”，即<b>鹅卵石</b>。</p>
+
+    <h3>u 在多重修饰中</h3>
+
+    <p>后加 u 的词是可以用于修饰的，一般取的是<b>非及物动词义</b>。如 <span class="p">i u ko u ke</span> ⇒ 导流槽。</p>
+    <p>iu 和 kou 可以分别只看作一个词，专门表示动词义。</p>
+
+    <div class="card tip">
+      <p class="t">提示</p>
+      <p>注意此处的<b>侧重</b>，iu 还是 kou 放后是有意义的，导流槽是<i>改变流水的长坑</i>，应该 kou 在后。</p>
+    </div>
+
+    <h3>ou</h3>
+
+    <p>ou 是 u 于修饰的特殊一面，表示<b>被动的动作</b>。</p>
+
+    <div class="scrollx">
+      <table>
+        <thead><tr><th>写法</th><th>直译 → 实际词义</th></tr></thead>
+        <tbody>
+          <tr><td><span class="p">ki ho</span></td><td>上飘的情感 → <b>自信，骄傲</b></td></tr>
+          <tr><td><span class="p">ki u ho</span></td><td>吹动（他人的）的情感 → <b>带感，煽动</b></td></tr>
+          <tr><td><span class="p">ki o u ho</span></td><td>被吹动的情感 → <b>上头</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card tip">
+      <p class="t">提示</p>
+      <p>但在“后 u”此类语法中，不必区分 u 和 ou，事实上它们在后 u 处是不用区分的，后 u 表示的既有主动的，如 kou 表示水流（水是隐藏主语），fou 表示食物（食物其实是<i>被</i>吃的）。</p>
+    </div>
+
+    <!-- ============ 尚未编完 ============ -->
+    <h2 id="pending">第十八课至第二十课</h2>
+
+    <div class="card tip">
+      <p class="t">提示</p>
+      <p>本章后面三课还没有编完，暂时先把课题放在这里：</p>
+      <ul>
+        <li>第十八课　连词与疑问</li>
+        <li>第十九课　li 分割词的一面*</li>
+        <li>第二十课　u 反重力的一面*</li>
+      </ul>
+    </div>
+
+    <div class="pager">
+      <a href="ch04.html">← 第四章</a>
+      <a href="tutorial.html">回目录</a>
+    </div>
+
+  </main>
+
+  <aside class="rail" aria-label="此页内容">
+    <p class="rail-title">此页内容</p>
+    <ul>
+      <li><a href="#lesson-16">第十六课　数字,次序与时间</a></li>
+      <li><a href="#lesson-17">第十七课　简单修饰顺序</a></li>
+      <li><a href="#pending">第十八课至第二十课</a></li>
+    </ul>
+  </aside>
+
+</div>
+
+<footer class="foot">
+  <p>二项式顺铂　2026</p>
+</footer>
+
+<script>
+(function () {
+  var body = document.body;
+  var openBtn = document.getElementById('navOpen');
+  var closeBtn = document.getElementById('navClose');
+  var scrim = document.getElementById('scrim');
+  var nav = document.getElementById('nav');
+
+  function setNav(on) {
+    body.classList.toggle('nav-open', on);
+    openBtn.setAttribute('aria-expanded', on ? 'true' : 'false');
+    scrim.hidden = !on;
+    if (on) { closeBtn.focus(); } else { openBtn.focus(); }
+  }
+  openBtn.addEventListener('click', function () { setNav(true); });
+  closeBtn.addEventListener('click', function () { setNav(false); });
+  scrim.addEventListener('click', function () { setNav(false); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && body.classList.contains('nav-open')) setNav(false);
+  });
+  nav.addEventListener('click', function (e) { if (e.target.closest('a')) setNav(false); });
+
+  function initToggle(btnId, cls, key) {
+    var btn = document.getElementById(btnId);
+    if (!btn) return;
+    function apply(on) {
+      body.classList.toggle(cls, on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      var label = on ? btn.getAttribute('data-show') : btn.getAttribute('data-hide');
+      btn.setAttribute('aria-label', label);
+      btn.title = label;
+    }
+    var saved = false;
+    try { saved = localStorage.getItem(key) === '1'; } catch (err) { saved = false; }
+    apply(saved);
+    btn.addEventListener('click', function () {
+      var on = !body.classList.contains(cls);
+      apply(on);
+      try { localStorage.setItem(key, on ? '1' : '0'); } catch (err) {}
+    });
+  }
+  initToggle('toggleSide', 'no-side', 'pf-no-side');
+  initToggle('toggleRail', 'no-rail', 'pf-no-rail');
+
+  var railLinks = [].slice.call(document.querySelectorAll('.rail a[href^="#"]'));
+  var heads = railLinks.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); }).filter(Boolean);
+  if (heads.length) {
+    var ticking = false;
+    function spy() {
+      var line = 96, cur = heads[0];
+      heads.forEach(function (h) { if (h.getBoundingClientRect().top <= line) cur = h; });
+      railLinks.forEach(function (a) { a.classList.toggle('is-active', a.getAttribute('href') === '#' + cur.id); });
+      ticking = false;
+    }
+    window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(spy); } }, { passive: true });
+    spy();
+  }
+})();
+</script>
+<script src="assets/scroll-ring.js"></script>
+
+</body>
+</html>
