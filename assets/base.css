@@ -131,13 +131,20 @@ a { color: inherit; }
   margin-left: auto;
   padding-right: 0.35rem;
   font-size: 0.9rem;
+  min-width: 0;
+  overflow-x: auto;                 /* 顶栏条目多了就横向滚动，不撑破 */
+  scrollbar-width: none;
 }
+
+.bar-nav::-webkit-scrollbar { width: 0; height: 0; }
 
 .bar-nav a {
   color: var(--ink-2);
   text-decoration: none;
   padding: 0.35rem 0;
   border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  flex: none;
 }
 
 .bar-nav a:hover { color: var(--orange-d); }
@@ -621,6 +628,19 @@ body.nav-open { overflow: hidden; }
   line-height: 1.35;
 }
 
+/* 封面下的语言切换 */
+.cover .lang {
+  margin: 1rem 0 0;
+  font-size: 0.85rem;
+}
+
+.cover .lang a {
+  color: var(--orange-d);
+  text-decoration: none;
+}
+
+.cover .lang a:hover { text-decoration: underline; text-underline-offset: 0.2em; }
+
 .pf {
   display: block;
   margin: 0.9rem 0 0;
@@ -637,6 +657,46 @@ body.nav-open { overflow: hidden; }
   font-size: 0.98em;
   line-height: 1.95;
   color: var(--ink-2);
+}
+
+/* 首页：官方说明 */
+.notice {
+  margin: 1.1rem 0 0;
+  font-size: 0.88rem;
+  line-height: 1.85;
+  color: var(--ink-2);
+}
+
+/* 首页：诞生计时（橙色条） */
+.clock {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1.5rem 0 0;
+  padding: 0.5rem 0.8rem;
+  border-left: 4px solid var(--orange);
+  border-radius: 4px;
+  background: #fdf1e6;
+  color: var(--ink-2);
+  font-size: 0.9rem;
+}
+
+.clock .cl-num {
+  font-family: var(--hei);
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--orange-d);
+  font-variant-numeric: tabular-nums;
+}
+
+.clock .cl-time {
+  margin-left: auto;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
 }
 
 .entry {
@@ -1150,6 +1210,12 @@ body.nav-open { overflow: hidden; }
 @media (min-width: 46rem) {
   .bar { padding-left: 0.9rem; }
   .cover { padding-top: 4rem; }
+}
+
+/* 窄屏：顶栏收紧一点，五个条目也能一行放下 */
+@media (max-width: 34rem) {
+  .bar-nav { gap: 0.7rem; font-size: 0.84rem; }
+  .brand-name { font-size: 0.92rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

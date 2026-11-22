@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pefon</title>
+<meta name="description" content="Pefon (“good language”) is a minimalist constructed language by LJG of the Binomial Cisplatin team: 58 words, pictographic and Latin scripts, free word order, main orders SVO or SOV.">
+<meta name="theme-color" content="#c85f17">
+<link rel="alternate" hreflang="zh-CN" href="index.html">
+<link rel="alternate" hreflang="en" href="index-en.html">
+<link rel="stylesheet" href="assets/font-fefenpefon.css">
+<link rel="stylesheet" href="assets/base.css">
+</head>
+<body>
+
+<header class="bar">
+  <a class="brand" href="index-en.html">
+    <span class="brand-mark" aria-hidden="true">pe fon</span>
+    <span class="brand-name">Pefon</span>
+  </a>
+  <nav class="bar-nav" aria-label="Site">
+    <a href="index-en.html" class="is-here">Home</a>
+    <a href="tutorial.html">Tutorial</a>
+    <a href="words.html">Word list</a>
+    <a href="trainer.html">Trainer</a>
+  </nav>
+</header>
+
+<div class="layout layout--home">
+
+  <main class="doc">
+
+    <header class="cover">
+      <div class="rule"></div>
+      <h1>Pefon</h1>
+      <span class="pf" aria-label="pefon">pe fon</span>
+      <p class="lang"><a href="index.html" hreflang="zh-CN" lang="zh-CN">中文版</a></p>
+    </header>
+
+    <div class="clock">
+      <span>Pefon has existed for</span>
+      <span class="cl-num" id="clD">—</span>
+      <span>days</span>
+      <span class="cl-time" id="clT"></span>
+    </div>
+
+    <p class="notice">This site is an official mirror that temporarily hosts Pefon materials.</p>
+
+    <h2 id="about">About</h2>
+
+    <p>Pefon (meaning “good language”) is a minimalist constructed language created in three days by LJG of the Binomial Cisplatin team. It is the simplest, easiest to learn and most complete language.</p>
+    <p>Pefon has only 58 words, written in both a pictographic and a Latin script. It is an analytic language with free word order; the main orders are SVO and SOV. All of its basic grammar takes 7 minutes to learn.</p>
+
+    <h2 id="scale">Scale</h2>
+
+    <p>Pefon was released on 31 July 2026. As of 4 November, it has 438 learners and users.</p>
+    <p>On 14 October, Pefon overtook Toki Pona to become the second-largest constructed language in China, counted by the size of China’s largest community.</p>
+
+    <h2 id="contents">Contents</h2>
+
+    <p>The tutorial, the word list and the trainer are written in Chinese.</p>
+
+    <a class="entry" href="tutorial.html">
+      <span class="tt">Integrated Tutorial<span class="note">Book one　20 lessons　in Chinese</span></span>
+    </a>
+
+    <a class="entry" href="words.html">
+      <span class="tt">Word List<span class="note">v2.6　58 words　in Chinese</span></span>
+    </a>
+
+    <a class="entry" href="trainer.html">
+      <span class="tt">Word Trainer<span class="note">import holographic vocabulary cards　in Chinese</span></span>
+    </a>
+
+  </main>
+
+</div>
+
+<footer class="foot">
+  <p>二项式顺铂　2026</p>
+</footer>
+
+<script>
+/* 诞生计时：从 2026-07-31 00:00（UTC+8）起算 */
+(function () {
+  var start = Date.UTC(2026, 6, 30, 16, 0, 0);
+  var dEl = document.getElementById('clD');
+  var tEl = document.getElementById('clT');
+  if (!dEl || !tEl) return;
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function tick() {
+    var s = Math.max(0, Math.floor((Date.now() - start) / 1000));
+    var d = Math.floor(s / 86400);
+    dEl.textContent = d;
+    tEl.textContent = pad(Math.floor(s % 86400 / 3600)) + ':' +
+                      pad(Math.floor(s % 3600 / 60)) + ':' + pad(s % 60);
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
+
+</body>
+</html>

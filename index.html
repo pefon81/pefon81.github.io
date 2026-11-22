@@ -4,8 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>配分语 pefon</title>
-<meta name="description" content="配分语（pefon）主页。">
+<meta name="description" content="配分语（Pefon，意为“好的语言”）是二项式顺铂团队中 LJG 创造的极简人工语言：58 个词，象形与拉丁两套书写系统，语序自由，主要语序 SVO/SOV。">
 <meta name="theme-color" content="#c85f17">
+<link rel="alternate" hreflang="zh-CN" href="index.html">
+<link rel="alternate" hreflang="en" href="index-en.html">
 <link rel="stylesheet" href="assets/font-fefenpefon.css">
 <link rel="stylesheet" href="assets/base.css">
 </head>
@@ -136,8 +138,27 @@
       <div class="rule"></div>
       <h1>配分语</h1>
       <span class="pf" aria-label="pefon">pe fon</span>
-      <!-- 简介：留空，等作者自己写 -->
+      <p class="lang"><a href="index-en.html" hreflang="en" lang="en">English version</a></p>
     </header>
+
+    <div class="clock">
+      <span>配分语诞生已经</span>
+      <span class="cl-num" id="clD">—</span>
+      <span>天</span>
+      <span class="cl-time" id="clT"></span>
+    </div>
+
+    <p class="notice">本网站是暂存配分语资料的代理页面，由官方经营。</p>
+
+    <h2 id="about">简介</h2>
+
+    <p>配分语（Pefon，意为“好的语言”）是由二项式顺铂团队中 LJG 于花三天时间创造的极简人工实用性语言，是最简单、最易学、最完备的语言。</p>
+    <p>配分语只有 58 个词，有象形与拉丁的书写系统。系分析语，语序自由，主要语序是 SVO/SOV。配分语所有基本语法学习只需要 7 分钟。</p>
+
+    <h2 id="scale">规模</h2>
+
+    <p>配分语的发布时间是 2026/7/31，截至 11/4 日，配分语的学习与使用者已有 438 人。</p>
+    <p>配分语于 10/14 超过道本语，成为中国第二大的人造语（以中国最大社群人数记）。</p>
 
     <!-- 要点、社群与工具：留空，等作者自己写 -->
 
@@ -214,6 +235,24 @@
   }
 
   initToggle('toggleSide', 'no-side', 'pf-no-side');
+})();
+
+/* 诞生计时：从 2026-07-31 00:00（UTC+8）起算 */
+(function () {
+  var start = Date.UTC(2026, 6, 30, 16, 0, 0);
+  var dEl = document.getElementById('clD');
+  var tEl = document.getElementById('clT');
+  if (!dEl || !tEl) return;
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function tick() {
+    var s = Math.max(0, Math.floor((Date.now() - start) / 1000));
+    var d = Math.floor(s / 86400);
+    dEl.textContent = d;
+    tEl.textContent = pad(Math.floor(s % 86400 / 3600)) + ':' +
+                      pad(Math.floor(s % 3600 / 60)) + ':' + pad(s % 60);
+  }
+  tick();
+  setInterval(tick, 1000);
 })();
 </script>
 
